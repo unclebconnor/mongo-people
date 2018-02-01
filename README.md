@@ -1,25 +1,7 @@
-# README
+## Technical Screen for Inkstone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Thanks for this opportunity.  Please let me know if you have any questions for me.
 
-Things you may want to cover:
+Best,
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# mongo-people
+Brian Connor
