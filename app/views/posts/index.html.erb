@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="killMargin killPads">Posts</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="kindaWide">Title</th>
+      <th class="moreWide">Body</th>
+      <th class="kindaWide" colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_posts.each do |post| %>
+      <tr>
+        <td  class="kindaWide"><%= post.title %></td>
+        <td  class="moreWide"><%= post.body %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @my_posts %>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

@@ -1,0 +1,27 @@
+<h1>Welcome to some blog!</h1>
+
+<h1>These are ALL of the blog posts</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="kindaWide">Title</th>
+      <th class="moreWide">Body</th>
+      <th class="kindaWide"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td class="kindaWide"><%= post.title %></td>
+        <td class="moreWide"><%= post.body %></td>
+        <td class="kindaWide"><%= link_to 'Show', post %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+
+</table>
+
+<div> <%= link_to 'Go to Your Posts', posts_path %></div>
